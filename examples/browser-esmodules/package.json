@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "true",
-    "start": "npm run build && npx http-server . -o"
+    "build": "node init && true",
+    "start": "node init && npm run build && npx http-server . -o"
   },
   "dependencies": {
     "uuid": "file:../../.local/uuid"
