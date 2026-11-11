@@ -4,3 +4,4 @@ dist/
 local.log
 logs/
 node_modules/
+config.bat

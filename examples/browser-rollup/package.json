@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && rollup -c",
-    "start": "npm run build && npx http-server . -o"
+    "build": "node init && rm -rf dist && rollup -c",
+    "start": "node init && npm run build && npx http-server . -o"
   },
   "dependencies": {
     "uuid": "file:../../.local/uuid"
