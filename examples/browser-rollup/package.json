@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "rm -fr node_modules && npm install --no-package-lock && rm -rf dist && rollup -c",
-    "start": "npm run build && npx http-server . -o"
+    "build": "node init && rm -fr node_modules && npm install --no-package-lock && rm -rf dist && rollup -c",
+    "start": "node init && npm run build && npx http-server . -o"
   },
   "dependencies": {
     "uuid": "file:../../.build/uuid.tgz"
