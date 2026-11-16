@@ -111,7 +111,7 @@
     "md": "runmd --watch --output=README.md README_js.md",
     "docs": "( node --version | grep -q 'v16' ) && ( npm run build && runmd --output=README.md README_js.md )",
     "docs:diff": "npm run docs && git diff --quiet README.md",
-    "build": "node init && ./scripts/build.sh",
+    "build": "./scripts/build.sh",
     "prepack": "npm run build",
     "release": "standard-version --no-verify"
   },
