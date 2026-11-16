@@ -86,8 +86,8 @@
     "@wdio/static-server-service": "9.0.8"
   },
   "scripts": {
-    "build": "node init && ./scripts/build.sh",
-    "build:watch": "node init && tsc --watch -p tsconfig.esm.json",
+    "build": "./scripts/build.sh",
+    "build:watch": "tsc --watch -p tsconfig.esm.json",
     "bundlewatch": "npm run pretest:browser && bundlewatch --config bundlewatch.config.json",
     "docs:diff": "npm run docs && git diff --quiet README.md",
     "docs": "npm run build && npx runmd --output=README.md README_js.md",
